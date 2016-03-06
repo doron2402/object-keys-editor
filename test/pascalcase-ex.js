@@ -13,7 +13,8 @@ describe('Object Keys Editor', function(){
           'mid name': 'Middle name',
           first: 'Doron'
         },
-        Alreadyascalcase: true
+        Alreadyascalcase: true,
+        someEmptyVal: ''
       };
       newObj = objectKeys({mode: 'pascalcase'})(tmpObj);
     });
@@ -27,6 +28,9 @@ describe('Object Keys Editor', function(){
     });
     it('Should not delete the key when already Pascal case', function(){
       expect(newObj).to.have.property('Alreadyascalcase').and.equal(true);
+    });
+    it('Should handle empty values', function(){
+      expect(newObj).to.have.property('Someemptyval').and.equal(null);
     });
   });
 });

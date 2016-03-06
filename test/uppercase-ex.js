@@ -16,7 +16,8 @@ describe('Object Keys Modifier', function(){
           ALL: {
             UPPERCASE: 'Yes!'
           }
-        }
+        },
+        nullVal: null
       };
       newObj = objectKeys({mode: 'uppercase'})(tmpObj);
     });
@@ -30,5 +31,8 @@ describe('Object Keys Modifier', function(){
     it('Should not delete the key when already UPPER case', function(){
       expect(newObj).to.have.deep.property('ALREADY.ALL.UPPERCASE','Yes!');
     });
+    it('Shold handle null values', function() {
+      expect(newObj).to.have.property('NULLVAL').and.equal(null);
+    })
   });
 });
