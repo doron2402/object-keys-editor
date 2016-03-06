@@ -1,6 +1,10 @@
 # object-keys-modifier
 
-Version: 1.0.0
+  - Version: 1.0.0
+  - Lower Case object keys (including nested keys)
+  - Pascal Case object keys (including nested keys)
+  - Camel Case object keys (including nested keys)
+  - Upper Case object keys (including nested keys)
 
 ## How to use quick guide
 ```
@@ -14,6 +18,32 @@ var newObj = objectKeys({mode: 'pascalcase'})({
 // newObj = { Name: 'some name' }
 ```
 
+## Example for UPPER CASE
+from this:
+```javascript
+{
+  name: 'some name',
+  user: {
+    name: 'doron'
+  }
+}
+// TO
+{
+  NAME: 'some name',
+  USER: {
+      NAME: : 'doron'
+  }
+}
+```
+
+### how to use
+```javascript
+const objectKeys = require('object-keys-modifier');
+var newObj = objectKeys({mode: 'uppercase'})({
+    name: 'some name'
+});
+// newObj = { NAME: 'some name' }
+```
 
 ## Example for pascal case
 from this:
@@ -31,7 +61,7 @@ from this:
 
 ### how to use
 ```javascript
-const objectKeys = require('');
+const objectKeys = require('object-keys-modifier');
 var newObj = objectKeys({mode: 'pascalcase'})({
     name: 'some name'
 });
@@ -62,7 +92,7 @@ from this:
 ```
 ### how to use
 ```javascript
-const objectKeys = require('');
+const objectKeys = require('object-keys-modifier');
 var newObj = objectKeys({mode: 'camelcase'})({
     UserName: 'some name'
 });
@@ -89,7 +119,7 @@ from this:
 ```
 ### how to use
 ```javascript
-const objectKeys = require('');
+const objectKeys = require('object-keys-modifier');
 var newObj = objectKeys({mode: 'lowercase'})({
     UserName: 'some name'
 });

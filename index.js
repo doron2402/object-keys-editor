@@ -1,6 +1,6 @@
 'use strict'
 
-const modeOptions = ['lowercase','camelcase', 'pascalcase'];
+const modeOptions = ['lowercase','camelcase', 'pascalcase', 'uppercase'];
 module.exports = function objectKeys(options){
   var mode = modeOptions[0];
   if (options.mode && modeOptions.indexOf(options.mode) !== -1){
@@ -9,4 +9,3 @@ module.exports = function objectKeys(options){
 
   return require(`./lib/${mode}`);
 };
-
