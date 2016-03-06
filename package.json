@@ -1,6 +1,6 @@
 {
   "name": "object-keys-modifier",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "node module to edit your object/json keys",
   "main": "index.js",
   "scripts": {

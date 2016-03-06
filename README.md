@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/doron2402/object-keys-editor.svg?branch=master)](https://travis-ci.org/doron2402/object-keys-editor)
 
-  - Version: 1.0.0
+  - Version: 1.0.1
   - Lower Case object keys (including nested keys)
   - Pascal Case object keys (including nested keys)
   - Camel Case object keys (including nested keys)
