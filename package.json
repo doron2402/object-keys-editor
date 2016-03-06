@@ -1,0 +1,41 @@
+{
+  "name": "object-keys-modifier",
+  "version": "1.0.0",
+  "description": "node module to edit your object/json keys",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doron2402/object-keys-editor.git"
+  },
+  "keywords": [
+    "Node.js",
+    "edit",
+    "json",
+    "keys",
+    "lowercase",
+    "all",
+    "object",
+    "keys",
+    "camelcase",
+    "object",
+    "keys"
+  ],
+  "author": "Doron Segal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doron2402/object-keys-editor/issues"
+  },
+  "homepage": "https://github.com/doron2402/object-keys-editor#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "must": "^0.13.1",
+    "pre-commit": "^1.1.2"
+  },
+  "pre-commit": [
+    "test"
+  ],
+}
