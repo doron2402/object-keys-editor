@@ -13,7 +13,8 @@ describe('Object Keys Editor', function(){
           'mid name': 'Middle name',
           FirstName: 'Doron'
         },
-        whenAlreadyCamel: true
+        whenAlreadyCamel: true,
+        IsActiveUser: false,
       };
       newObj = objectKeys({mode: 'camelcase'})(tmpObj);
     });
@@ -27,6 +28,9 @@ describe('Object Keys Editor', function(){
     });
     it('When already camel case it should not delete the key', function(){
       expect(newObj).to.have.deep.property('whenAlreadyCamel', true);
+    });
+    it('Should handle a false boolean value', function() {
+      expect(newObj).to.have.property('isActiveUser', false);
     });
   });
 });

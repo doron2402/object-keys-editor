@@ -30,7 +30,7 @@ describe('Object Keys Editor', function(){
       expect(newObj).to.have.property('Alreadyascalcase').and.equal(true);
     });
     it('Should handle empty values', function(){
-      expect(newObj).to.have.property('Someemptyval').and.equal(null);
+      expect(newObj).to.have.property('Someemptyval').and.equal('');
     });
   });
 });
