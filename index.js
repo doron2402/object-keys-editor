@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const modeOptions = ['lowercase','camelcase', 'pascalcase', 'uppercase'];
 module.exports = function objectKeys(options){
