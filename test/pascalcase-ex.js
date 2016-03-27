@@ -19,7 +19,7 @@ describe('Object Keys Editor', function(){
       newObj = objectKeys({mode: 'pascalcase'})(tmpObj);
     });
     it('Should pascal case all the keys', function(){
-      expect(newObj).to.have.property('Password').and.equal('****');
+      expect(newObj).to.have.property('PassWord').and.equal('****');
       expect(newObj).to.have.property('Username').and.equal('Doron');
     });
     it('Should pascal case nested keys', function(){
@@ -30,7 +30,7 @@ describe('Object Keys Editor', function(){
       expect(newObj).to.have.property('Alreadyascalcase').and.equal(true);
     });
     it('Should handle empty values', function(){
-      expect(newObj).to.have.property('Someemptyval').and.equal('');
+      expect(newObj).to.have.property('SomeEmptyVal').and.equal('');
     });
   });
 });
